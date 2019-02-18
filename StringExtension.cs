@@ -8,6 +8,8 @@ namespace PadawansTask12
         {
             if (source == null)
                 throw new ArgumentNullException();
+            if(source == "")
+                throw new ArgumentException();
             //throw new NotImplementedException();
             for (int i = 0; i < source.Length - 1; i++)
             {
